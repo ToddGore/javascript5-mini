@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Movie from 'Movie';
+import Movie from './Movie';
 
 class App extends Component {
 
@@ -14,7 +14,7 @@ class App extends Component {
 
   render() {
 
-    const badMovies = this.state.badMovies.map( movie => {
+    const badMovies = this.state.badMovies.map(movie => {
       <Movie movie={movie} />
     })
 
